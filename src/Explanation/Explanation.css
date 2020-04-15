@@ -1,0 +1,14 @@
+.explanation-container {
+
+    display:flex;
+    justify-content: center;
+    text-align: left;
+
+}
+
+
+.explanation {
+
+    width:55%
+
+}
