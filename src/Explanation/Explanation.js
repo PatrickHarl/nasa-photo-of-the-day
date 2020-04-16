@@ -1,6 +1,25 @@
 import React from 'react'
 import "./Explanation.css"
+import styled from '@emotion/styled'
 
+
+const ExplanationContainer = styled.div`
+
+
+    display:flex;
+    justify-content: center;
+    text-align: left;
+
+
+
+`
+const ExplanationPara = styled.p`
+
+
+    width:55%;
+
+
+`
 
 
 function Explanation({nasaData}) {
@@ -15,9 +34,9 @@ function Explanation({nasaData}) {
     return (
 
 
-        <div className='explanation-container'>
-            <p className="explanation">{nasaData.explanation}</p>
-        </div>
+        <ExplanationContainer>
+            <ExplanationPara>{nasaData.explanation}</ExplanationPara>
+        </ExplanationContainer>
 
 
     )

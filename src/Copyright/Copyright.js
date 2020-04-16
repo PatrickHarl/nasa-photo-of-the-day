@@ -1,5 +1,20 @@
 import React from 'react'
+import styled from '@emotion/styled'
 
+const CopyrightContainer = styled.div`
+
+
+    font-style:italic;
+
+
+`
+const CopyrightPara = styled.p`
+
+
+    text-decoration:underline;
+
+
+`
 
 function Copyright({nasaData}) {
 
@@ -14,12 +29,12 @@ function Copyright({nasaData}) {
     return (
 
     
-        <div>
+        <CopyrightContainer>
 
             <p>{`\u00a9` + nasaData.copyright}</p>
-            <p>Date: {nasaData.date}</p>
+            <CopyrightPara>Date: {nasaData.date}</CopyrightPara>
 
-        </div>
+        </CopyrightContainer>
 
 
     )
