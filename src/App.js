@@ -58,11 +58,6 @@ function App() {
 
   return (
     <AppContainer>
-       <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-      
       <label for="dates">Choose a date: </label>
       <LabelContainer>
         <select onChange= {(event) => {setCurrentDate(event.target.value)}} id="dates">
